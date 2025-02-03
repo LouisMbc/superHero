@@ -1,5 +1,5 @@
-import { SearchBar } from '../components/SearchBar';
-import { Introduction } from '../components/Introduction';
+import { SearchBar } from '../../components/searchBar/SearchBar';
+import { Introduction } from '../../components/introduction/Introduction';
 import './Home.css';
 
 export function Home() {

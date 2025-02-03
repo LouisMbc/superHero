@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router';
 import { useState } from 'react';
-import { Loader } from './Loader';
+import { Loader } from './loader/Loader';
 
 export function HeroCard({ hero }) {
   const navigate = useNavigate();

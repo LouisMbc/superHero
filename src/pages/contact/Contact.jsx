@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import { useAuth } from '../auth/AuthProvider';
+import { useAuth } from '../../auth/AuthProvider';
 
 export const Contact = () => {
   const { user } = useAuth();

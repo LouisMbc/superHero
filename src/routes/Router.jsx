@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router"; 
-import { Home } from "../pages/Home";
-import { Contact } from "../pages/Contact";
-import { Search } from "../pages/Search";
+import { Home } from "../pages/home/Home";
+import { Contact } from "../pages/contact/Contact";
+import { Search } from "../pages/search/Search";
 import { PrivateRoute } from "../auth/PrivateRoute";
 import { HeroDetails } from "../pages/HeroDetails";
 import { Login } from "../auth/LoginOut";

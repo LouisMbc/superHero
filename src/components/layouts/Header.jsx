@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router';
-import { useAuth } from '../auth/AuthProvider';
-import { Logout } from '../auth/LoginOut';
+import { useAuth } from '../../auth/AuthProvider';
+import { Logout } from '../../auth/LoginOut';
 import './Header.css';
 
 export default function Header() {

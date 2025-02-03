@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router';
-import { SearchBar } from '../components/SearchBar';
-import { HeroCard } from '../components/HeroCard';
-import { Loader } from '../components/Loader';
+import { SearchBar } from '../../components/searchBar/SearchBar';
+import { HeroCard } from '../../components/HeroCard';
+import { Loader } from '../../components/loader/Loader';
 import './Search.css';
 
 export function Search() {

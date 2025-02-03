@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './HeroDetails.css';
-import { Loader } from '../components/loader/Loader';
+import { Loader } from '../../components/loader/Loader';
 
 export function HeroDetails() {
   const { id } = useParams();

@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router';
 import { AuthProvider } from './auth/AuthProvider';
 import Header from './components/layouts/Header';
 import { Footer } from './components/layouts/Footer';

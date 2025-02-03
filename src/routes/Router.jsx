@@ -5,6 +5,7 @@ import { Search } from "../pages/search/Search";
 import { PrivateRoute } from "../auth/PrivateRoute";
 import { HeroDetails } from "../pages/HeroDetails";
 import { Login } from "../auth/LoginOut";
+import { NotFound } from "../pages/notFound/NotFound";
 
 export default function Router() {
   return (
@@ -38,6 +39,7 @@ export default function Router() {
           </PrivateRoute>
         } 
       />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

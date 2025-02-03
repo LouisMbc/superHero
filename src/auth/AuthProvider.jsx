@@ -14,7 +14,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   const login = (username, password) => {
-    if (username === "admin" && password === "1234") {
+    if (username === "Louis" && password === "malbec") {
       const newUser = { username };
       setUser(newUser);
       Cookies.set("user", JSON.stringify(newUser), { expires: 1 });

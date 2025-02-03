@@ -24,6 +24,7 @@
   border-radius: 50px !important;
   font-size: 1.1rem !important;
   transition: all 0.3s ease;
+  line-height: normal;
 }
 
 .search-input:focus {
@@ -43,6 +44,10 @@
   transform: translateY(-50%);
   color: #ffd93d;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  line-height: 1;
 }
 
 .search-button {

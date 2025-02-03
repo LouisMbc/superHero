@@ -1,7 +1,6 @@
 import './Introduction.css';
 import { useEffect, useState } from 'react';
 
-// Dans src/components/Introduction.jsx
 export function Introduction() {
   const [isVisible, setIsVisible] = useState(false);
 

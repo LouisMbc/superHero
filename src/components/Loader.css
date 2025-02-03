@@ -1,0 +1,145 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1c20 0%, #2d3436 100%);
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Shield Animation */
+.shield {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  animation: pulse 2s infinite;
+}
+
+.shield-inner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate 3s linear infinite;
+}
+
+.shield-star {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Energy Rings */
+.energy-rings {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  border-top-color: #ffd93d;
+  animation: spin 2s linear infinite;
+}
+
+.ring:nth-child(2) {
+  width: 80%;
+  height: 80%;
+  animation-duration: 1.5s;
+  animation-direction: reverse;
+  border-top-color: #ff6b6b;
+}
+
+.ring:nth-child(3) {
+  width: 60%;
+  height: 60%;
+  animation-duration: 1s;
+  border-top-color: #4834d4;
+}
+
+/* Loading Text Animation */
+.loading-text {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffd93d;
+}
+
+.loading-text span {
+  animation: bounce 0.5s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffd93d;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffd93d;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Ajoutez les délais pour chaque lettre */
+.loading-text span:nth-child(1) { --i: 1; }
+.loading-text span:nth-child(2) { --i: 2; }
+.loading-text span:nth-child(3) { --i: 3; }
+.loading-text span:nth-child(4) { --i: 4; }
+.loading-text span:nth-child(5) { --i: 5; }
+.loading-text span:nth-child(6) { --i: 6; }
+.loading-text span:nth-child(7) { --i: 7; }
+.loading-text span:nth-child(8) { --i: 8; }
+.loading-text span:nth-child(9) { --i: 9; }
+.loading-text span:nth-child(10) { --i: 10; }

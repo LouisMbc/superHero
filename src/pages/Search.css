@@ -1,0 +1,126 @@
+.search-page-container {
+  background: linear-gradient(135deg, #1a1c20 0%, #2d3436 100%);
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-section {
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.search-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffd93d;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  animation: titleGlow 2s ease-in-out infinite;
+}
+
+.results-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.power-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,217,61,0.2) 0%, rgba(255,217,61,0) 70%);
+  animation: pulse 3s infinite;
+}
+
+.circle-1 {
+  width: 400px;
+  height: 400px;
+  top: -200px;
+  right: -200px;
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  bottom: -150px;
+  left: -150px;
+  animation-delay: 1s;
+}
+
+.energy-beam {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd93d, transparent);
+  animation: beam 3s linear infinite;
+}
+
+.beam-1 { top: 20%; animation-delay: 0s; }
+.beam-2 { top: 40%; animation-delay: 1s; }
+.beam-3 { top: 60%; animation-delay: 2s; }
+
+@keyframes titleGlow {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(255, 217, 61, 0.5),
+                 0 0 40px rgba(255, 217, 61, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 217, 61, 0.8),
+                 0 0 60px rgba(255, 217, 61, 0.5);
+  }
+}
+
+@keyframes beam {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .search-section {
+    padding: 2rem 1rem;
+  }
+  
+  .results-container {
+    padding: 1rem;
+  }
+}

@@ -24,7 +24,8 @@
   border-radius: 50px !important;
   font-size: 1.1rem !important;
   transition: all 0.3s ease;
-  line-height: normal;
+  line-height: 1.2;
+  height: auto;
 }
 
 .search-input:focus {
@@ -40,14 +41,15 @@
 .search-icon {
   position: absolute;
   left: 1rem;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   color: #ffd93d;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
-  height: 100%;
+  height: auto;
   line-height: 1;
+  z-index: 2;
 }
 
 .search-button {
